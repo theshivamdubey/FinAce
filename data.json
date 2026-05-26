@@ -1,0 +1,66 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Kotak811 Super Savings Account",
+      "content": "Key features of Kotak811 Super Savings A/c Get flat 5% cashback up to â‚¹500 every month on your Debit Card spends You don't have to maintain any balance to remain a part of this program. Which type of transactions will be considered for cashback? Debit Card spends via ECOM (E-commerce) & POS (Point of sales) will be considered. Your cashback will be credited to your account by 30th of the next month of the qualification month. It'll be credited in your account. 811 Super membership will be live for one year form date of subscription. You will not be eligible for 5% cashback for the month(s) you do not make a deposit. Annual Program fees -:Â  â‚¹300 For Account",
+      "category": "financial",
+      "image": "https://res.cloudinary.com/diawzhidw/image/upload/v1761322403/mazzoecfcrop0iq0wk13.jpg?w=400&h=200&fit=crop",
+      "date": "2025-10-21",
+      "pinned": true,
+      "viewCount": 0
+    },
+    {
+      "id": 2,
+      "title": "HDFC Millennia Debit Card",
+      "content": "Earn up to â‚¹4,800 cashback annually with 5% cashback on PayZapp and SmartBuy, 2.5% on all online spends, and 1% on offline spends and wallet reloads. Tips: Use Amazon pay wallet load money 40k. cashback limit - â‚¹400/month Max Cashback Credit time - 90 days ",
+      "category": "financial",
+      "image": "https://res.cloudinary.com/diawzhidw/image/upload/v1761323240/lkvrk28f5lsf3zwyfnxa.jpg?w=400&h=200&fit=crop",
+      "date": "2025-10-23",
+      "pinned": false,
+      "viewCount": 0
+    },
+    {
+      "id": 3,
+      "title": "Roar Bank Credit Card",
+      "content": "Offered by Unity Small Finance Bank Lifetime Free Card: No joining, annual, or renewal fees with zero hidden costs. 62 Days Interest-Free Credit:(including a 3-day grace period).2-in-1 Card (Credit + Savings): The card is bundled with a savings account, allowing you to manage both credit and savings from one place. You earn attractive interest (up to 7.5% p.a.) on your savings balance. Cashback Up to 20%: Earn up to 20% cashback on select categories (e.g., movies, entertainment, pet stores, restaurants) each month. You can pick categories for cashback every month, subject to monthly caps.Instant Approval & Digital Onboarding: 100% paperless application process, quick registration (approx. 3 minutes), and instant credit limit decision. Cashback limit 2500 per Month",
+      "category": "financial",
+      "image": "https://res.cloudinary.com/diawzhidw/image/upload/v1761323740/hcxutiw49dd4o9fkpd5s.jpg?w=400&h=200&fit=crop",
+      "date": "2025-10-25",
+      "pinned": false,
+      "viewCount": 0
+    }
+  ],
+  "affiliates": [
+    {
+      "id": 1,
+      "title": "Financial Planning Book Collection",
+      "description": "Essential books for understanding personal finance, budgeting, and investment strategies. Perfect for beginners and those looking to deepen their financial knowledge.",
+      "platform": "amazon",
+      "url": "https://amazon.in/financial-books",
+      "price": "â‚¹2,499",
+      "image": "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=400&h=200&fit=crop",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "title": "Budget Planner & Expense Tracker",
+      "description": "Organize your finances with this comprehensive budget planner. Track expenses, set financial goals, and take control of your money management.",
+      "platform": "flipkart",
+      "url": "https://flipkart.com/budget-planner",
+      "price": "â‚¹899",
+      "image": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=400&h=200&fit=crop",
+      "featured": false
+    },
+    {
+      "id": 3,
+      "title": "Investment Calculator & Tools",
+      "description": "Professional-grade financial calculators to help you plan investments, calculate returns, and make informed financial decisions.",
+      "platform": "amazon",
+      "url": "https://amazon.in/investment-calculator",
+      "price": "â‚¹1,299",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=200&fit=crop",
+      "featured": false
+    }
+  ]
+}

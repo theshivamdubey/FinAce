@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <!-- SEO Meta Tags -->
+    <title>
+      FiNAce by Sandhya Enterprises - Financial Insights, Credit Cards, Savings
+      & Investment Tips
+    </title>
+    <meta
+      name="description"
+      content="FiNAce provides expert financial insights, credit card reviews, savings account comparisons, and investment tips. Get curated product recommendations from Amazon & Flipkart."
+    />
+    <meta
+      name="keywords"
+      content="finance tips, credit cards India, savings account, investment advice, financial planning, money management, FiNAce, Sandhya Enterprises"
+    />
+    <meta name="author" content="Sandhya Enterprises" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://finace.in.net/" />
+
+    <!-- Open Graph Meta Tags for Social Sharing -->
+    <meta
+      property="og:title"
+      content="FiNAce - Financial Insights & Product Recommendations"
+    />
+    <meta
+      property="og:description"
+      content="Your trusted source for financial insights, credit card reviews, and curated affiliate products."
+    />
+    <meta
+      property="og:image"
+      content="https://finace.in.net/images/og-image.jpg"
+    />
+    <meta property="og:url" content="https://finace.in.net/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="FiNAce - Financial Insights & Product Recommendations"
+    />
+    <meta
+      name="twitter:description"
+      content="Your trusted source for financial insights and product recommendations."
+    />
+    <meta
+      name="twitter:image"
+      content="https://finace.in.net/images/twitter-card.jpg"
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💰</text></svg>"
+    />
+
+    <!-- Font Awesome for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="styles.css?v=20251028" />
+
+    <!-- Structured Data for Rich Snippets -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "FiNAce by Sandhya Enterprises",
+        "url": "https://finace.in.net/",
+        "logo": "https://finace.in.net/images/logo.png",
+        "description": "Financial insights, credit card reviews, and product recommendations",
+        "sameAs": [
+          "https://facebook.com/finace",
+          "https://twitter.com/finace",
+          "https://linkedin.com/company/finace"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Header with Enhanced Navigation -->
+    <header class="header">
+      <div class="container">
+        <!-- Logo -->
+        <div class="logo">
+          <div class="logo-icon">
+            <div class="anchor-whale"></div>
+          </div>
+          <div class="logo-text">
+            <h1>FiNAce</h1>
+            <p>by Sandhya Enterprises</p>
+          </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="nav">
+          <ul class="nav-menu" id="navMenu">
+            <li>
+              <a href="#home" class="nav-link active"
+                ><i class="fas fa-home"></i> Home</a
+              >
+            </li>
+            <li>
+              <a href="#blog" class="nav-link"
+                ><i class="fas fa-blog"></i> Blog</a
+              >
+            </li>
+            <li>
+              <a href="#affiliate" class="nav-link"
+                ><i class="fas fa-link"></i> Products</a
+              >
+            </li>
+            <li>
+              <a href="#about" class="nav-link"
+                ><i class="fas fa-info-circle"></i> About</a
+              >
+            </li>
+            <li id="adminNavItem">
+              <a
+                href="#"
+                class="nav-link admin-nav-link"
+                onclick="checkAdminAccess()"
+              >
+                <i class="fas fa-user-shield"></i> Admin
+              </a>
+            </li>
+            <li id="logoutNavItem" style="display: none">
+              <a href="#" class="nav-link logout-nav-link" onclick="logout()">
+                <i class="fas fa-sign-out-alt"></i> Logout
+              </a>
+            </li>
+          </ul>
+
+          <!-- Mobile Menu Toggle -->
+          <button
+            class="mobile-menu-toggle"
+            id="mobileMenuToggle"
+            aria-label="Toggle navigation menu"
+          >
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section with Enhanced CTA -->
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-content fade-in">
+          <h2>Welcome to FiNAce</h2>
+          <p>
+            Your trusted source for financial insights, information posts, and
+            curated affiliate products from Amazon and Flipkart.
+          </p>
+          <button class="cta-btn" aria-label="Explore latest blog posts">
+            Explore Latest Posts
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Section with Enhanced Filters -->
+    <section id="blog" class="blog-section">
+      <div class="container">
+        <h2 class="section-title">Latest Blog Posts</h2>
+
+        <!-- Enhanced Filter Buttons -->
+        <div class="blog-filters">
+          <button class="filter-btn active" data-filter="all">All Posts</button>
+          <button class="filter-btn" data-filter="financial">Financial</button>
+          <button class="filter-btn" data-filter="tips">Tips & Tricks</button>
+          <button class="filter-btn" data-filter="news">News</button>
+        </div>
+
+        <!-- Blog Grid -->
+        <div class="blog-grid" id="blogGrid">
+          <!-- Blog posts will be loaded dynamically by script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Affiliate Products Section -->
+    <section id="affiliate" class="affiliate-section">
+      <div class="container">
+        <h2 class="section-title">Recommended Products</h2>
+
+        <!-- Platform Filters -->
+        <div class="affiliate-filters">
+          <button class="filter-btn active" data-platform="all">
+            All Products
+          </button>
+          <button class="filter-btn" data-platform="amazon">Amazon</button>
+          <button class="filter-btn" data-platform="flipkart">Flipkart</button>
+        </div>
+
+        <!-- Affiliate Products Grid -->
+        <div class="affiliate-grid" id="affiliateGrid">
+          <!-- Affiliate products will be loaded dynamically by script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section (NEW) -->
+    <section class="newsletter-section">
+      <div class="container">
+        <div class="newsletter-content">
+          <h2><i class="fas fa-envelope"></i> Subscribe to Our Newsletter</h2>
+          <p>
+            Get weekly financial tips, exclusive deals, and latest articles
+            delivered straight to your inbox!
+          </p>
+          <form
+            class="newsletter-form"
+            id="newsletterForm"
+            onsubmit="subscribeNewsletter(event)"
+          >
+            <input
+              type="email"
+              placeholder="Enter your email address"
+              required
+              aria-label="Email address for newsletter"
+            />
+            <button type="submit" class="btn btn-primary">
+              <i class="fas fa-paper-plane"></i> Subscribe
+            </button>
+          </form>
+          <p class="newsletter-privacy">
+            🔒 We respect your privacy. Unsubscribe anytime.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section with Enhanced Features -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <h2 class="section-title">About FiNAce</h2>
+        <div class="about-content">
+          <p>
+            FiNAce by Sandhya Enterprises is your comprehensive platform for
+            financial education, insights, and carefully curated product
+            recommendations. We provide valuable information posts and affiliate
+            links to trusted products from Amazon and Flipkart.
+          </p>
+
+          <!-- Features Grid -->
+          <div class="features">
+            <div class="feature fade-in">
+              <i class="fas fa-graduation-cap"></i>
+              <h3>Educational Content</h3>
+              <p>
+                In-depth articles on financial topics, banking products, and
+                money management tips curated by experts.
+              </p>
+            </div>
+            <div class="feature fade-in">
+              <i class="fas fa-link"></i>
+              <h3>Affiliate Links</h3>
+              <p>
+                Curated products from Amazon and Flipkart with honest reviews
+                and recommendations you can trust.
+              </p>
+            </div>
+            <div class="feature fade-in">
+              <i class="fas fa-shield-alt"></i>
+              <h3>Trusted Recommendations</h3>
+              <p>
+                We test and review every product and service before recommending
+                to ensure quality and value.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section (NEW) -->
+    <section class="faq-section">
+      <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="faq-container">
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>What is FiNAce?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                FiNAce is a comprehensive financial information platform
+                providing insights on credit cards, savings accounts,
+                investments, and curated product recommendations to help you
+                make informed financial decisions.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>How do affiliate links work?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                When you purchase products through our affiliate links, we may
+                earn a small commission at no extra cost to you. This helps us
+                maintain the website and provide free content.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Is the content free to access?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Yes! All our blog posts, financial tips, and product
+                recommendations are completely free to access. We believe
+                financial literacy should be accessible to everyone.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>How often is content updated?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                We regularly update our blog with new financial insights,
+                product reviews, and tips. Subscribe to our newsletter to stay
+                informed about the latest updates.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer with Enhanced Structure -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <!-- Company Info -->
+          <div class="footer-section">
+            <div class="footer-logo">
+              <div class="logo-icon">
+                <div class="anchor-whale"></div>
+              </div>
+              <div class="logo-text">
+                <h3>FiNAce</h3>
+                <p>by Sandhya Enterprises</p>
+              </div>
+            </div>
+            <p style="margin-top: 1rem">
+              Your trusted source for financial insights and product
+              recommendations.
+            </p>
+            <div class="social-links" style="margin-top: 1rem">
+              <a href="#" aria-label="Facebook"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" aria-label="Twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" aria-label="LinkedIn"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="#" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#blog">Blog</a></li>
+              <li><a href="#affiliate">Products</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="admin-login.html">Admin Login</a></li>
+            </ul>
+          </div>
+
+          <!-- Categories -->
+          <div class="footer-section">
+            <h4>Categories</h4>
+            <ul>
+              <li><a href="#blog">Credit Cards</a></li>
+              <li><a href="#blog">Savings Accounts</a></li>
+              <li><a href="#blog">Investment Tips</a></li>
+              <li><a href="#blog">Financial Planning</a></li>
+              <li><a href="#blog">Money Management</a></li>
+            </ul>
+          </div>
+
+          <!-- Legal & Contact -->
+          <div class="footer-section footer-contact">
+            <h4>Legal & Contact</h4>
+            <p><i class="fas fa-envelope"></i> contact@finace.fyi</p>
+            <p><i class="fas fa-phone"></i> +91-XXXXXXXXXX</p>
+            <ul style="margin-top: 1rem">
+              <li><a href="privacy-policy.html">Privacy Policy</a></li>
+              <li><a href="terms-of-service.html">Terms of Service</a></li>
+              <li><a href="affiliate-disclosure.html">Affiliate Disclosure</a></li>
+              <li><a href="cookie-policy.html">Cookie Policy</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+          <p>&copy; 2025 FiNAce by Sandhya Enterprises. All rights reserved.</p>
+          <p style="margin-top: 0.5rem; font-size: 0.85rem">
+            <strong>Affiliate Disclosure:</strong> This website contains
+            affiliate links. We may earn a commission when you make a purchase
+            through these links at no additional cost to you.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button
+      class="back-to-top"
+      id="backToTop"
+      onclick="scrollToTop()"
+      aria-label="Scroll to top"
+    >
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Admin Panel Modal -->
+    <div id="adminModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2><i class="fas fa-user-shield"></i> Admin Dashboard</h2>
+          <span class="close" onclick="closeAllModals()">&times;</span>
+        </div>
+        <div class="modal-body">
+          <!-- Admin Tabs -->
+          <div class="admin-tabs">
+            <button class="tab-btn active" data-tab="dashboard">
+              <i class="fas fa-tachometer-alt"></i> Dashboard
+            </button>
+            <button class="tab-btn" data-tab="posts">
+              <i class="fas fa-blog"></i> Manage Posts
+            </button>
+            <button class="tab-btn" data-tab="affiliate">
+              <i class="fas fa-link"></i> Manage Products
+            </button>
+            <button class="tab-btn logout-btn" onclick="logout()" style="float:right; margin-left:auto; background:#ef4444; color:white;">
+              <i class="fas fa-sign-out-alt"></i> Logout
+            </button>
+          </div>
+
+          <!-- Dashboard Tab -->
+          <div id="dashboard-tab" class="tab-content active">
+            <div class="dashboard-header">
+              <h3>Welcome to FiNAce Admin Panel</h3>
+              <p>
+                Manage your blog posts, affiliate products, and view analytics
+              </p>
+            </div>
+
+            <!-- Dashboard Stats -->
+            <div class="dashboard-stats">
+              <div class="stat-card">
+                <div class="stat-icon"><i class="fas fa-eye"></i></div>
+                <div class="stat-content">
+                  <h4>Total Visits</h4>
+                  <div class="stat-number" id="totalVisits">0</div>
+                  <p>All-time page visits</p>
+                </div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-icon"><i class="fas fa-users"></i></div>
+                <div class="stat-content">
+                  <h4>Unique Visitors</h4>
+                  <div class="stat-number" id="uniqueVisitors">0</div>
+                  <p>Individual visitors</p>
+                </div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-icon"><i class="fas fa-newspaper"></i></div>
+                <div class="stat-content">
+                  <h4>Total Post Views</h4>
+                  <div class="stat-number" id="totalPostViews">0</div>
+                  <p>Blog post views</p>
+                </div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-icon"><i class="fas fa-fire"></i></div>
+                <div class="stat-content">
+                  <h4>Most Viewed</h4>
+                  <div class="stat-number" id="mostViewedCount">0</div>
+                  <p>Top post views</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="dashboard-actions">
+              <button
+                class="btn btn-primary"
+                onclick="switchAdminTabByName('posts')"
+              >
+                <i class="fas fa-plus"></i> Add New Post
+              </button>
+              <button
+                class="btn btn-primary"
+                onclick="switchAdminTabByName('affiliate')"
+              >
+                <i class="fas fa-link"></i> Add Product
+              </button>
+              <button class="btn btn-secondary" onclick="resetVisitorCounter()">
+                <i class="fas fa-redo"></i> Reset Visitor Stats
+              </button>
+              <button class="btn btn-success" onclick="exportSiteData()">
+                <i class="fas fa-download"></i> Export Data (data.json)
+              </button>
+            </div>
+
+            <!-- Dashboard Info -->
+            <div class="dashboard-info">
+              <h4><i class="fas fa-info-circle"></i> Quick Stats</h4>
+              <ul>
+                <li>
+                  <strong>Last Visit:</strong>
+                  <span id="lastVisit">Just now</span>
+                </li>
+                <li>
+                  <strong>Total Posts:</strong>
+                  <span id="dashTotalPosts">0</span>
+                </li>
+                <li>
+                  <strong>Total Products:</strong>
+                  <span id="dashTotalProducts">0</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Manage Posts Tab -->
+          <div id="posts-tab" class="tab-content">
+            <div class="admin-actions">
+              <button class="btn btn-primary" onclick="openPostModal()">
+                <i class="fas fa-plus"></i> Add New Post
+              </button>
+            </div>
+            <div class="posts-list" id="adminPostsList">
+              <!-- Posts will be loaded dynamically -->
+            </div>
+          </div>
+
+          <!-- Manage Affiliate Tab -->
+          <div id="affiliate-tab" class="tab-content">
+            <div class="admin-actions">
+              <button class="btn btn-primary" onclick="openAffiliateModal()">
+                <i class="fas fa-plus"></i> Add New Product
+              </button>
+            </div>
+            <div class="affiliate-list" id="adminAffiliateList">
+              <!-- Affiliate links will be loaded dynamically -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Post Modal -->
+    <div id="postModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 id="postModalTitle"><i class="fas fa-edit"></i> Add New Post</h2>
+          <span class="close" onclick="closeAllModals()">&times;</span>
+        </div>
+        <div class="modal-body">
+          <form id="postForm">
+            <div class="form-group">
+              <label for="postTitle">Post Title *</label>
+              <input
+                type="text"
+                id="postTitle"
+                required
+                placeholder="Enter post title"
+              />
+            </div>
+            <div class="form-group">
+              <label for="postContent">Content *</label>
+              <textarea
+                id="postContent"
+                required
+                rows="8"
+                placeholder="Write your post content here..."
+              ></textarea>
+            </div>
+            <div class="form-group">
+              <label for="postCategory">Category</label>
+              <select id="postCategory">
+                <option value="financial">Financial</option>
+                <option value="tips">Tips & Tricks</option>
+                <option value="news">News</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="postImage">Image URL</label>
+              <input
+                type="url"
+                id="postImage"
+                placeholder="https://example.com/image.jpg"
+              />
+            </div>
+            <div class="form-group">
+              <label>
+                <input type="checkbox" id="postPinned" />
+                Pin this post to top
+              </label>
+            </div>
+            <div class="form-actions">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                onclick="closeAllModals()"
+              >
+                Cancel
+              </button>
+              <button type="submit" class="btn btn-success">
+                <i class="fas fa-save"></i> Save Post
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Affiliate Modal -->
+    <div id="affiliateModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 id="affiliateModalTitle">
+            <i class="fas fa-link"></i> Add New Product
+          </h2>
+          <span class="close" onclick="closeAllModals()">&times;</span>
+        </div>
+        <div class="modal-body">
+          <form id="affiliateForm">
+            <div class="form-group">
+              <label for="affiliateTitle">Product Title *</label>
+              <input
+                type="text"
+                id="affiliateTitle"
+                required
+                placeholder="Enter product title"
+              />
+            </div>
+            <div class="form-group">
+              <label for="affiliateDescription">Description *</label>
+              <textarea
+                id="affiliateDescription"
+                required
+                rows="4"
+                placeholder="Product description..."
+              ></textarea>
+            </div>
+            <div class="form-group">
+              <label for="affiliatePlatform">Platform</label>
+              <select id="affiliatePlatform">
+                <option value="amazon">Amazon</option>
+                <option value="flipkart">Flipkart</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="affiliateUrl">Affiliate URL *</label>
+              <input
+                type="url"
+                id="affiliateUrl"
+                required
+                placeholder="https://..."
+              />
+            </div>
+            <div class="form-group">
+              <label for="affiliatePrice">Price</label>
+              <input type="text" id="affiliatePrice" placeholder="₹999" />
+            </div>
+            <div class="form-group">
+              <label for="affiliateImage">Image URL</label>
+              <input
+                type="url"
+                id="affiliateImage"
+                placeholder="https://example.com/product.jpg"
+              />
+            </div>
+            <div class="form-group">
+              <label>
+                <input type="checkbox" id="affiliateFeatured" />
+                Feature this product
+              </label>
+            </div>
+            <div class="form-actions">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                onclick="closeAllModals()"
+              >
+                Cancel
+              </button>
+              <button type="submit" class="btn btn-success">
+                <i class="fas fa-save"></i> Save Product
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- External JavaScript -->
+    <script src="script.js?v=20251028"></script>
+
+    <!-- Additional Inline Scripts for FAQ and Newsletter -->
+    <script>
+      // FAQ Accordion
+      document.querySelectorAll(".faq-question").forEach((question) => {
+        question.addEventListener("click", () => {
+          const faqItem = question.parentElement;
+          const isActive = faqItem.classList.contains("active");
+
+          // Close all FAQs
+          document.querySelectorAll(".faq-item").forEach((item) => {
+            item.classList.remove("active");
+          });
+
+          // Open clicked FAQ if it wasn't active
+          if (!isActive) {
+            faqItem.classList.add("active");
+          }
+        });
+      });
+
+      // Newsletter subscription
+      function subscribeNewsletter(event) {
+        event.preventDefault();
+        const email = document.querySelector(
+          '#newsletterForm input[type="email"]'
+        ).value;
+
+        // In production, send to backend
+        console.log("Newsletter subscription:", email);
+
+        alert(
+          "✅ Thank you for subscribing! Check your email for confirmation."
+        );
+        document.getElementById("newsletterForm").reset();
+      }
+
+      // Scroll to top function
+      function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+
+      // Show back-to-top button on scroll
+      window.addEventListener("scroll", () => {
+        const backToTop = document.getElementById("backToTop");
+        if (window.pageYOffset > 300) {
+          backToTop.style.display = "flex";
+        } else {
+          backToTop.style.display = "none";
+        }
+      });
+
+      // Update visitor count display
+      function updateVisitorCountDisplay() {
+        const visitorData = localStorage.getItem("visitorData");
+        if (visitorData) {
+          const data = JSON.parse(visitorData);
+          const display = document.getElementById("visitorCountDisplay");
+          if (display) {
+            display.textContent = (data.totalVisits || 0).toLocaleString();
+          }
+        }
+      }
+
+      // Update counts on load
+      window.addEventListener("load", () => {
+        updateVisitorCountDisplay();
+
+        // Update post and affiliate counts
+        setTimeout(() => {
+          const postCount = document.querySelectorAll(".blog-card").length;
+          const affiliateCount =
+            document.querySelectorAll(".affiliate-card").length;
+
+          const postCountEl = document.getElementById("postCount");
+          const affiliateCountEl = document.getElementById("affiliateCount");
+
+          if (postCountEl) postCountEl.textContent = postCount;
+          if (affiliateCountEl) affiliateCountEl.textContent = affiliateCount;
+        }, 500);
+      });
+    </script>
+  </body>
+</html>

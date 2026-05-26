@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>Admin Login - FiNAce by Sandhya Enterprises</title>
+    <link rel="stylesheet" href="admin-styles.css?v=20251028">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-card">
+            <div class="login-header">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <div class="anchor-whale"></div>
+                    </div>
+                    <div class="logo-text">
+                        <h1>FINACE BY SANDHYA</h1>
+                        <p>ENTERPRISES</p>
+                    </div>
+                </div>
+                <h2>Admin Login</h2>
+                <p>Access the admin panel to manage your content</p>
+            </div>
+            
+            <form id="loginForm" class="login-form">
+                <div class="form-group">
+                    <label for="adminId">
+                        <i class="fas fa-user"></i>
+                        Admin ID
+                    </label>
+                    <input type="text" id="adminId" name="adminId" required placeholder="Enter your Admin ID">
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">
+                        <i class="fas fa-lock"></i>
+                        Password
+                    </label>
+                    <input type="password" id="password" name="password" required placeholder="Enter your password">
+                    <button type="button" class="toggle-password" onclick="togglePassword()">
+                        <i class="fas fa-eye" id="toggleIcon"></i>
+                    </button>
+                </div>
+                
+                <div class="form-group">
+                    <label class="remember-me">
+                        <input type="checkbox" id="rememberMe">
+                        <span class="checkmark"></span>
+                        Remember me
+                    </label>
+                </div>
+                
+                <button type="submit" class="login-btn">
+                    <i class="fas fa-sign-in-alt"></i>
+                    Login to Admin Panel
+                </button>
+                
+                <div id="errorMessage" class="error-message"></div>
+            </form>
+            
+            <div class="login-footer">
+                <p>Having trouble? Contact the administrator</p>
+                <a href="index.html" class="back-to-site">
+                    <i class="fas fa-arrow-left"></i>
+                    Back to Website
+                </a>
+            </div>
+        </div>
+        
+        <div class="login-info">
+            <div class="info-card">
+                <h3>Admin Panel Features</h3>
+                <ul>
+                    <li><i class="fas fa-check"></i> Manage Blog Posts</li>
+                    <li><i class="fas fa-check"></i> Add/Edit Shopping Deals</li>
+                    <li><i class="fas fa-check"></i> Pin Important Posts</li>
+                    <li><i class="fas fa-check"></i> Feature Products</li>
+                    <li><i class="fas fa-check"></i> Website Settings</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="admin-login.js?v=20251028"></script>
+</body>
+</html>
+
